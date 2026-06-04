@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products &amp; Collections | UNMUKT</title>
+  <meta name="description" content="Explore Unmukt's handcrafted artisan products — fabric toys, home decor, embroidery art, gifts, and corporate gifting collections made by rural women of Rajasthan.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- STICKY NAVBAR -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="UNMUKT Home Page">
+        <img src="assets/logo/Unmukt_Logo-removebg-preview.png" alt="UNMUKT Logo" style="height: 38px; width: auto; object-fit: contain;">
+        UNMUKT
+      </a>
+      <button class="hamburger" id="hamburger-menu" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+   <nav role="navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="artisans.html" class="nav-link">Artisans</a></li>
+          <li><a href="team.html" class="nav-link">Team</a></li>
+          <!-- <li><a href="blog.html" class="nav-link">Blog</a></li> -->
+          <li><a href="partnerships.html" class="nav-link">Partnerships</a></li>
+          <li><a href="training.html" class="nav-link">Training</a></li>
+           <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO BANNER -->
+  <div class="page-hero">
+    <div class="container">
+      <span class="sub">Artisanal Catalog</span>
+      <h1>Explore Our Collections</h1>
+      <p>Every product is entirely handcrafted by women artisans using eco-friendly and upcycled materials.</p>
+    </div>
+  </div>
+
+  <!-- PRODUCTS SECTION -->
+  <section class="section bg-beige-light" id="products" aria-label="Handcrafted Products &amp; Bulk Ordering">
+    <div class="container">
+      <!-- <div class="section-header reveal">
+        <span class="sub">Our Catalog</span>
+        <h2>Explore Handcrafted Collections</h2>
+        <p>Browse through our unique ranges of sustainable products handcrafted with love.</p>
+      </div> -->
+      <div class="products-wrapper">
+
+        <!-- Category Tabs -->
+        <div class="tabs-container reveal">
+          <button class="tab-btn active" data-category="all" aria-label="Show all products">All Products</button>
+          <button class="tab-btn" data-category="toys" aria-label="Show fabric toys">Fabric Toys</button>
+          <button class="tab-btn" data-category="decor" aria-label="Show home decor items">Home Decor</button>
+          <button class="tab-btn" data-category="embroidery" aria-label="Show embroidery artwork">Embroidery</button>
+          <button class="tab-btn" data-category="gifts" aria-label="Show gifts and lifestyle pieces">Gifts &amp; Lifestyle</button>
+          <button class="tab-btn" data-category="corporate" aria-label="Show corporate gifting selections">Corporate Gifting</button>
+        </div>
+
+        <!-- Products Grid -->
+        <div class="products-grid reveal" style="transition-delay: 0.15s;">
+
+          <!-- Product 1 - Toys -->
+          <article class="product-card" data-cat="toys">
+            <!-- Place image at: images/products/fabric-elephant.jpg -->
+            <img src="images/products/fabric-elephant.jpg"
+                 alt="Handcrafted Fabric Elephant toy made from upcycled cotton"
+                 class="product-img">
+            <div class="product-info">
+              <div>
+                <h3>Handcrafted Fabric Elephant</h3>
+                <p>Colorful animal toy made entirely from upcycled cotton fabric scraps. Stitched with double durability threads.</p>
+              </div>
+              <div class="product-actions">
+                <span class="product-price">Upcycled Craft</span>
+                <a href="#bulk-order" class="btn btn-secondary btn-product-inquiry" data-product="Fabric Elephant" style="padding: 6px 14px; font-size: 0.8rem;" aria-label="Inquire about Fabric Elephant bulk order">Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 2 - Decor -->
+          <article class="product-card" data-cat="decor">
+            <!-- Place image at: images/products/cushion-cover.jpg -->
+            <img src="images/products/cushion-cover.jpg"
+                 alt="Block-Print Cushion Cover with organic dye hand block prints"
+                 class="product-img">
+            <div class="product-info">
+              <div>
+                <h3>Block-Print Cushion Covers</h3>
+                <p>Premium covers featuring organic dye hand block prints. Hand-hemmed finishes by rural stitchers.</p>
+              </div>
+              <div class="product-actions">
+                <span class="product-price">Handmade</span>
+                <a href="#bulk-order" class="btn btn-secondary btn-product-inquiry" data-product="Block-Print Cushion" style="padding: 6px 14px; font-size: 0.8rem;" aria-label="Inquire about Cushion Cover bulk order">Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 3 - Embroidery -->
+          <article class="product-card" data-cat="embroidery">
+            <!-- Place image at: images/products/suf-hoop-art.jpg -->
+            <img src="images/products/suf-hoop-art.jpg"
+                 alt="Traditional Suf Hoop Art — geometric Suf hand-embroidery on khadi cloth"
+                 class="product-img">
+            <div class="product-info">
+              <div>
+                <h3>Traditional Suf Hoop Art</h3>
+                <p>Exquisite geometric Suf hand-embroidery on high-quality organic khadi cloth, mounted in bamboo frame.</p>
+              </div>
+              <div class="product-actions">
+                <span class="product-price">Fine Art</span>
+                <a href="#bulk-order" class="btn btn-secondary btn-product-inquiry" data-product="Suf Hoop Art" style="padding: 6px 14px; font-size: 0.8rem;" aria-label="Inquire about Suf Hoop Art bulk order">Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 4 - Gifts -->
+          <article class="product-card" data-cat="gifts">
+            <!-- Place image at: images/products/fabric-journal.jpg -->
+            <img src="images/products/fabric-journal.jpg"
+                 alt="Artisan Fabric Journal with hand-woven indigo fabric cover"
+                 class="product-img">
+            <div class="product-info">
+              <div>
+                <h3>Artisan Fabric Journal</h3>
+                <p>Notebook bound with authentic hand-woven indigo fabrics, containing locally made recycled paper pages.</p>
+              </div>
+              <div class="product-actions">
+                <span class="product-price">Eco Stationery</span>
+                <a href="#bulk-order" class="btn btn-secondary btn-product-inquiry" data-product="Fabric Journal" style="padding: 6px 14px; font-size: 0.8rem;" aria-label="Inquire about Fabric Journal bulk order">Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 5 - Corporate -->
+          <article class="product-card" data-cat="corporate">
+            <!-- Place image at: images/products/eco-welcome-kit.jpg -->
+            <img src="images/products/eco-welcome-kit.jpg"
+                 alt="Eco Welcome Gift Kit — fabric laptop sleeve and eco accessories"
+                 class="product-img">
+            <div class="product-info">
+              <div>
+                <h3>Eco Welcome Gift Kit</h3>
+                <p>Includes fabric laptop sleeve, upcycled card holder, and wooden bookmark in customizable cotton pouch.</p>
+              </div>
+              <div class="product-actions">
+                <span class="product-price">Customizable</span>
+                <a href="#bulk-order" class="btn btn-secondary btn-product-inquiry" data-product="Eco Welcome Kit" style="padding: 6px 14px; font-size: 0.8rem;" aria-label="Inquire about Welcome Kit bulk order">Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 6 - Toys -->
+          <article class="product-card" data-cat="toys">
+            <!-- Place image at: images/products/rag-doll.jpg -->
+            <img src="images/products/rag-doll.jpg"
+                 alt="Gudia Soft Rag Doll made from natural plant-dyed fabrics"
+                 class="product-img">
+            <div class="product-info">
+              <div>
+                <h3>Gudia Soft Rag Doll</h3>
+                <p>Charmingly detailed play-doll made from natural plant-dyed fabrics, complete with traditional attire stitch details.</p>
+              </div>
+              <div class="product-actions">
+                <span class="product-price">Safe Materials</span>
+                <a href="#bulk-order" class="btn btn-secondary btn-product-inquiry" data-product="Rag Doll" style="padding: 6px 14px; font-size: 0.8rem;" aria-label="Inquire about Rag Doll bulk order">Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 7 - Decor -->
+          <article class="product-card" data-cat="decor">
+            <!-- Place image at: images/products/table-runner.jpg -->
+            <img src="images/products/table-runner.jpg"
+                 alt="Desert Bloom Table Runner with applique design"
+                 class="product-img">
+            <div class="product-info">
+              <div>
+                <h3>Desert Bloom Table Runner</h3>
+                <p>Beautiful table lining featuring applique design techniques handmade by women in western Thar regions.</p>
+              </div>
+              <div class="product-actions">
+                <span class="product-price">Applique Work</span>
+                <a href="#bulk-order" class="btn btn-secondary btn-product-inquiry" data-product="Table Runner" style="padding: 6px 14px; font-size: 0.8rem;" aria-label="Inquire about Table Runner bulk order">Inquire</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Product 8 - Corporate -->
+          <article class="product-card" data-cat="corporate">
+            <!-- Place image at: images/products/jute-tote.jpg -->
+            <img src="images/products/jute-tote.jpg"
+                 alt="Premium Branding Jute Tote bag with terracotta block print"
+                 class="product-img">
+            <div class="product-info">
+              <div>
+                <h3>Premium Branding Jute Tote</h3>
+                <p>Eco-friendly jute tote bag with reinforced handles, terracotta block print sides, and custom logo tags.</p>
+              </div>
+              <div class="product-actions">
+                <span class="product-price">Eco Carryall</span>
+                <a href="#bulk-order" class="btn btn-secondary btn-product-inquiry" data-product="Jute Tote" style="padding: 6px 14px; font-size: 0.8rem;" aria-label="Inquire about Jute Tote bulk order">Inquire</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- Bulk Order Request Form -->
+      <div class="form-card reveal" id="bulk-order">
+        <div class="form-title-area">
+          <h3>Bulk Order Inquiry</h3>
+          <p>Are you looking to place large B2B orders for your retail store, boutique, or corporate events? Fill out this quick form, and our coordinator will respond with price structures within 24 hours.</p>
+        </div>
+        <form id="bulkOrderForm" novalidate>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="bulk-name">Your Full Name *</label>
+              <input type="text" id="bulk-name" class="form-control" placeholder="e.g., Anjali Sharma" required>
+              <div class="form-error-msg">Please enter your name.</div>
+            </div>
+            <div class="form-group">
+              <label for="bulk-company">Company / Organization</label>
+              <input type="text" id="bulk-company" class="form-control" placeholder="e.g., Earth Goods Co.">
+            </div>
+            <div class="form-group">
+              <label for="bulk-email">Email Address *</label>
+              <input type="email" id="bulk-email" class="form-control" placeholder="e.g., anjali@company.com" required>
+              <div class="form-error-msg">Please enter a valid email address.</div>
+            </div>
+            <div class="form-group">
+              <label for="bulk-phone">Phone Number *</label>
+              <input type="tel" id="bulk-phone" class="form-control" placeholder="e.g., +91 98765 43210" required>
+              <div class="form-error-msg">Please enter your phone number.</div>
+            </div>
+            <div class="form-group">
+              <label for="bulk-qty">Approximate Quantity *</label>
+              <input type="number" id="bulk-qty" class="form-control" placeholder="e.g., 100" min="10" required>
+              <div class="form-error-msg">Please specify a quantity (minimum 10).</div>
+            </div>
+            <div class="form-group">
+              <label for="bulk-interest">Product of Interest *</label>
+              <select id="bulk-interest" class="form-control" required>
+                <option value="" disabled selected>Select a Product Category</option>
+                <option value="Fabric Elephant">Handcrafted Fabric Elephant</option>
+                <option value="Block-Print Cushion">Block-Print Cushion Covers</option>
+                <option value="Suf Hoop Art">Traditional Suf Hoop Art</option>
+                <option value="Fabric Journal">Artisan Fabric Journal</option>
+                <option value="Eco Welcome Kit">Eco Welcome Gift Kit</option>
+                <option value="Rag Doll">Gudia Soft Rag Doll</option>
+                <option value="Table Runner">Desert Bloom Table Runner</option>
+                <option value="Jute Tote">Premium Jute Tote Bag</option>
+                <option value="Multiple">Multiple Products / Custom Design</option>
+              </select>
+              <div class="form-error-msg">Please select a product.</div>
+            </div>
+            <div class="form-group form-group-full">
+              <label for="bulk-details">Requirement Details *</label>
+              <textarea id="bulk-details" class="form-control" placeholder="Describe specifications, shipping deadlines, personalization logos, or packaging preferences..." required></textarea>
+              <div class="form-error-msg">Please describe your custom request details.</div>
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary" style="padding: 14px 45px;">Submit Bulk Request</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+            <a href="index.html" class="logo">
+            <img src="assets/logo/Unmukt Logo.png" alt="UNMUKT Logo" style="height: 32px; width: auto; object-fit: contain;">
+            UNMUKT
+          </a>
+          <p>Unmukt is a women-led artisan enterprise from Rajasthan focused on empowering rural women through livelihood creation, handcrafted products, and sustainable economic opportunities.</p>
+          <div style="margin-top: 15px; font-size: 0.9rem; line-height: 1.8; opacity: 0.8;">
+            <p style="margin-bottom: 5px;">📍 Village Ramsar, Palwala, Tehsil Bassi, Jaipur 303012</p>
+            <p style="margin-bottom: 5px;">📧 <a href="mailto:admin@unmuktmahila.com" style="color: var(--color-terracotta-light);">admin@unmuktmahila.com</a></p>
+            <p style="margin-bottom: 0;">📞 <a href="tel:+919116498949" style="color: var(--color-terracotta-light);">+91 91164 98949</a></p>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Home Sections</h4>
+          <ul>
+            <li><a href="index.html#home">Hero</a></li>
+            <li><a href="index.html#story">Our Story</a></li>
+            <li><a href="index.html#impact">Impact</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="artisans.html">Artisans</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="partnerships.html">Partnerships</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="team.html">Team</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Join the Movement</h4>
+          <p>Subscribe to receive quarterly stories, new collection drops, and craft cluster impact surveys.</p>
+          <form class="footer-form" id="newsletterForm2" onsubmit="event.preventDefault(); alert('Newsletter subscribed successfully!'); this.reset();">
+            <input type="email" placeholder="Email address..." aria-label="Newsletter email address" required>
+            <button type="submit" aria-label="Subscribe to newsletter">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Unmukt. All Rights Reserved.</p>
+        <p>Crafted with dignity in Rajasthan, India.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
