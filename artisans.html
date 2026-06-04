@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet Our Artisans | UNMUKT</title>
+  <meta name="description" content="Discover the talented rural women artisans of Rajasthan who handcraft Unmukt's products. Read their inspiring stories of empowerment and craftsmanship.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- STICKY NAVBAR -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="container nav-container">
+      <a href="index.html" class="logo" aria-label="UNMUKT Home Page">
+        <img src="assets/logo/Unmukt_Logo-removebg-preview.png" alt="UNMUKT Logo" style="height: 38px; width: auto; object-fit: contain;">
+        UNMUKT
+      </a>
+      <button class="hamburger" id="hamburger-menu" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+     <nav role="navigation">
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link active">Home</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="artisans.html" class="nav-link">Artisans</a></li>
+          <li><a href="team.html" class="nav-link">Team</a></li>
+          <!-- <li><a href="blog.html" class="nav-link">Blog</a></li> -->
+          <li><a href="partnerships.html" class="nav-link">Partnerships</a></li>
+          <li><a href="training.html" class="nav-link">Training</a></li>
+           <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PAGE HERO BANNER -->
+  <div class="page-hero">
+    <div class="container">
+      <span class="sub">The Hands That Craft Change</span>
+      <h1>Meet the Artisans</h1>
+      <p>Meet the resilient and creative rural women from Rajasthan who redefine their futures through traditional craft skills.</p>
+    </div>
+  </div>
+
+  <!-- ARTISANS GRID SECTION -->
+  <section class="section bg-beige-light" id="artisans-section" aria-label="Artisan Profiles">
+    <div class="container">
+      <!-- <div class="section-header reveal">
+        <span class="sub">Crafts &amp; Community</span>
+        <h2>Meet the Artisans</h2>
+        <p>Every purchase directly provides sustainable, dignified income to these artisans, empowering their families and communities.</p>
+      </div> -->
+
+      <div class="artisans-grid reveal" style="transition-delay: 0.15s;">
+        <!-- Artisan 1 -->
+        <article class="artisan-card">
+          <img src="images/impact/kamla-devi.jpg" alt="Kamla Devi — artisan from Sikra Village" class="artisan-img" style="width:100%; height:280px; object-fit:cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="img-placeholder" style="display:none; height:280px; background-color: var(--color-placeholder-bg); display: flex; flex-direction: column; justify-content: center; align-items: center; color: var(--color-placeholder-text);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:40px; height:40px;"><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a6 6 0 0 1 12 0v2"/></svg>
+            <span style="margin-top:10px; font-weight:600;">Kamla Devi Portrait</span>
+          </div>
+          <div class="artisan-info">
+            <span class="artisan-village">Sikra Village</span>
+            <h3>Kamla Devi</h3>
+            <div class="artisan-skills">
+              <span class="skill-tag">Stitching</span>
+              <span class="skill-tag">Tailoring</span>
+              <span class="skill-tag">Quality Check</span>
+            </div>
+            <p class="artisan-story" style="margin-bottom: 20px;">A mother of three who transformed her family's dry crop agricultural struggle into financial independence through expert stitching.</p>
+            <button class="btn btn-secondary btn-read-story" data-artisan="kamla" style="padding: 8px 18px; font-size: 0.85rem; width: 100%;" aria-label="Read Kamla Devi's story">Read Full Journey</button>
+          </div>
+        </article>
+
+        <!-- Artisan 2 -->
+        <article class="artisan-card">
+          <img src="images/impact/radha-bai.jpg" alt="Radha Bai — artisan from Guda Village" class="artisan-img" style="width:100%; height:280px; object-fit:cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="img-placeholder" style="display:none; height:280px; background-color: var(--color-placeholder-bg); display: flex; flex-direction: column; justify-content: center; align-items: center; color: var(--color-placeholder-text);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:40px; height:40px;"><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a6 6 0 0 1 12 0v2"/></svg>
+            <span style="margin-top:10px; font-weight:600;">Radha Bai Portrait</span>
+          </div>
+          <div class="artisan-info">
+            <span class="artisan-village">Guda Village</span>
+            <h3>Radha Bai</h3>
+            <div class="artisan-skills">
+              <span class="skill-tag">Suf Embroidery</span>
+              <span class="skill-tag">Hand Embroidery</span>
+              <span class="skill-tag">Color Design</span>
+            </div>
+            <p class="artisan-story" style="margin-bottom: 20px;">Translated geometric Suf stitching into premium cushion cover designs. Supported her house with green solar panels through crafts.</p>
+            <button class="btn btn-secondary btn-read-story" data-artisan="radha" style="padding: 8px 18px; font-size: 0.85rem; width: 100%;" aria-label="Read Radha Bai's story">Read Full Journey</button>
+          </div>
+        </article>
+
+        <!-- Artisan 3 -->
+        <article class="artisan-card">
+          <img src="images/impact/rukmani-devi.jpg" alt="Rukmani Devi — artisan from Nayla Cluster" class="artisan-img" style="width:100%; height:280px; object-fit:cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="img-placeholder" style="display:none; height:280px; background-color: var(--color-placeholder-bg); display: flex; flex-direction: column; justify-content: center; align-items: center; color: var(--color-placeholder-text);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:40px; height:40px;"><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a6 6 0 0 1 12 0v2"/></svg>
+            <span style="margin-top:10px; font-weight:600;">Rukmani Devi Portrait</span>
+          </div>
+          <div class="artisan-info">
+            <span class="artisan-village">Nayla Cluster</span>
+            <h3>Rukmani Devi</h3>
+            <div class="artisan-skills">
+              <span class="skill-tag">Material Cutting</span>
+              <span class="skill-tag">Cluster Coordination</span>
+              <span class="skill-tag">Accounting</span>
+            </div>
+            <p class="artisan-story" style="margin-bottom: 20px;">Rose from a raw fabric cutter to cluster coordinator, managing payments, supplies, and digital logs for 15 women artisans in her village.</p>
+            <button class="btn btn-secondary btn-read-story" data-artisan="rukmani" style="padding: 8px 18px; font-size: 0.85rem; width: 100%;" aria-label="Read Rukmani Devi's story">Read Full Journey</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal (For showing read-more dialogs) -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Expanded artisan story view">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close modal" style="color:var(--color-white); font-size:3rem; cursor:pointer;">&times;</button>
+    <div class="lightbox-content">
+      <div class="lightbox-image" id="lightboxImage"></div>
+      <p class="lightbox-caption" id="lightboxCaption" style="display:none;"></p>
+    </div>
+  </div>
+
+  <!-- Toast alert placement -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+            <a href="index.html" class="logo">
+            <img src="assets/logo/Unmukt Logo.png" alt="UNMUKT Logo" style="height: 32px; width: auto; object-fit: contain;">
+            UNMUKT
+          </a>
+          <p>Unmukt is a women-led artisan enterprise from Rajasthan focused on empowering rural women through livelihood creation, handcrafted products, and sustainable economic opportunities.</p>
+          <div style="margin-top: 15px; font-size: 0.9rem; line-height: 1.8; opacity: 0.8;">
+            <p style="margin-bottom: 5px;">📍 Village Ramsar, Palwala, Tehsil Bassi, Jaipur 303012</p>
+            <p style="margin-bottom: 5px;">📧 <a href="mailto:admin@unmuktmahila.com" style="color: var(--color-terracotta-light);">admin@unmuktmahila.com</a></p>
+            <p style="margin-bottom: 0;">📞 <a href="tel:+919116498949" style="color: var(--color-terracotta-light);">+91 91164 98949</a></p>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Home Sections</h4>
+          <ul>
+            <li><a href="index.html#home">Hero</a></li>
+            <li><a href="index.html#story">Our Story</a></li>
+            <li><a href="index.html#impact">Impact</a></li>
+            <li><a href="index.html#gallery">Gallery</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="artisans.html">Artisans</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="partnerships.html">Partnerships</a></li>
+            <li><a href="training.html">Training</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="team.html">Team</a></li>
+          </ul>
+        </div>
+        <div class="footer-newsletter">
+          <h4>Join the Movement</h4>
+          <p>Subscribe to receive quarterly stories, new collection drops, and craft cluster impact surveys.</p>
+          <form class="footer-form" id="newsletterForm" onsubmit="event.preventDefault(); alert('Newsletter subscribed successfully!'); this.reset();">
+            <input type="email" placeholder="Email address..." aria-label="Newsletter email address" required>
+            <button type="submit" aria-label="Subscribe to newsletter">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Unmukt. All Rights Reserved.</p>
+        <p>Crafted with dignity in Rajasthan, India.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
