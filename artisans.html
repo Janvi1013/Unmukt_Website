@@ -19,7 +19,7 @@
       <button class="hamburger" id="hamburger-menu" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="nav-menu">
         <span></span><span></span><span></span>
       </button>
-      <nav role="navigation">
+       <nav role="navigation">
         <ul class="nav-menu" id="nav-menu">
           <li><a href="index.html" class="nav-link active">Home</a></li>
           <li><a href="products.html" class="nav-link">Products</a></li>
@@ -28,7 +28,7 @@
           <!-- <li><a href="blog.html" class="nav-link">Blog</a></li> -->
           <li><a href="partnerships.html" class="nav-link">Partnerships</a></li>
           <li><a href="training.html" class="nav-link">Training</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
+           <li><a href="contact.html" class="nav-link">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -46,10 +46,20 @@
   <!-- ARTISANS GRID SECTION -->
   <section class="section bg-beige-light" id="artisans-section" aria-label="Artisan Profiles">
     <div class="container">
+      <!-- <div class="section-header reveal">
+        <span class="sub">Crafts &amp; Community</span>
+        <h2>Meet the Artisans</h2>
+        <p>Every purchase directly provides sustainable, dignified income to these artisans, empowering their families and communities.</p>
+      </div> -->
+
       <div class="artisans-grid reveal" style="transition-delay: 0.15s;">
         <!-- Artisan 1 -->
         <article class="artisan-card">
-          <img src="images/impact/kamla-devi.jpg" alt="Kamla Devi — artisan from Sikra Village" class="artisan-img">
+          <img src="images/impact/kamla-devi.jpg" alt="Kamla Devi — artisan from Sikra Village" class="artisan-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="img-placeholder" style="display:none; height:280px; background-color: var(--color-placeholder-bg); display: flex; flex-direction: column; justify-content: center; align-items: center; color: var(--color-placeholder-text);">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="width:40px; height:40px;"><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a6 6 0 0 1 12 0v2"/></svg>
+            <span style="margin-top:10px; font-weight:600;">Kamla Devi Portrait</span>
+          </div>
           <div class="artisan-info">
             <span class="artisan-village">Sikra Village</span>
             <h3>Kamla Devi</h3>
@@ -74,8 +84,8 @@
               <span class="skill-tag">Hand Embroidery</span>
               <span class="skill-tag">Color Design</span>
             </div>
-            <p class="artisan-story">Translated geometric Suf stitching into premium cushion cover designs. Supported her house with green solar panels through crafts.</p>
-            <button class="btn btn-secondary btn-read-story" data-artisan="radha" style="padding: 8px 18px; font-size: 0.85rem;" aria-label="Read Radha Bai's story">Read Full Journey</button>
+            <p class="artisan-story" style="margin-bottom: 20px;">Translated geometric Suf stitching into premium cushion cover designs. Supported her house with green solar panels through crafts.</p>
+            <button class="btn btn-secondary btn-read-story" data-artisan="radha" style="padding: 8px 18px; font-size: 0.85rem; width: 100%;" aria-label="Read Radha Bai's story">Read Full Journey</button>
           </div>
         </article>
 
@@ -90,8 +100,8 @@
               <span class="skill-tag">Cluster Coordination</span>
               <span class="skill-tag">Accounting</span>
             </div>
-            <p class="artisan-story">Rose from a raw fabric cutter to cluster coordinator, managing payments, supplies, and digital logs for 15 women artisans.</p>
-            <button class="btn btn-secondary btn-read-story" data-artisan="rukmani" style="padding: 8px 18px; font-size: 0.85rem;" aria-label="Read Rukmani Devi's story">Read Full Journey</button>
+            <p class="artisan-story" style="margin-bottom: 20px;">Rose from a raw fabric cutter to cluster coordinator, managing payments, supplies, and digital logs for 15 women artisans in her village.</p>
+            <button class="btn btn-secondary btn-read-story" data-artisan="rukmani" style="padding: 8px 18px; font-size: 0.85rem; width: 100%;" aria-label="Read Rukmani Devi's story">Read Full Journey</button>
           </div>
         </article>
       </div>
@@ -100,8 +110,8 @@
 
   <!-- Lightbox Modal (For showing read-more dialogs) -->
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Expanded artisan story view">
-    <div style="background-color: var(--color-pure-white); color: var(--color-charcoal); padding: 40px; border-radius: var(--radius-lg); text-align: left; max-width: 600px; border: 1px solid rgba(0,0,0,0.1); position: relative;">
-      <button id="lightboxClose" class="modal-close" aria-label="Close modal" style="position:absolute; top:10px; right:10px; background:none; border:none; font-size:1.5rem; cursor:pointer;">✕</button>
+    <div class="lightbox-content">
+      <button id="lightboxClose" class="modal-close" aria-label="Close modal">✕</button>
       <div class="lightbox-image" id="lightboxImage"></div>
       <p class="lightbox-caption" id="lightboxCaption" style="display:none;"></p>
     </div>
@@ -140,7 +150,7 @@
           <ul>
             <li><a href="products.html">Products</a></li>
             <li><a href="artisans.html">Artisans</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <!-- <li><a href="blog.html">Blog</a></li> -->
             <li><a href="partnerships.html">Partnerships</a></li>
             <li><a href="training.html">Training</a></li>
             <li><a href="contact.html">Contact</a></li>
