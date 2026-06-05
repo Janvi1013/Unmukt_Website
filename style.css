@@ -769,7 +769,101 @@ img, video {
   stroke: var(--color-text-muted);
 }
 
-/* Values Grid (Team page) */
+/* Responsive Adjustments */
+
+/* Contact page: stack map and form on small screens */
+@media (max-width: 768px) {
+  .contact-split {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .contact-map-container,
+  .contact-form-panel {
+    width: 100%;
+  }
+  .contact-map-container > div {
+    height: 250px; /* reduce map height on mobile */
+  }
+}
+
+/* Ensure all images are fluid and not cut */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hero and story card images: limit height on mobile */
+@media (max-width: 768px) {
+  .hero-image-container .hero-img {
+    height: 250px;
+    object-fit: cover;
+  }
+  .story-card img {
+    height: 200px;
+    object-fit: cover;
+  }
+}
+
+/* Stories of Transformation grid responsive tweaks */
+@media (max-width: 991px) {
+  .stories-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+}
+@media (max-width: 768px) {
+  .stories-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+/* Lightbox modal full-screen with scroll */
+#lightbox {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(4px);
+  z-index: 2000;
+  padding: 20px;
+}
+
+/* Lightbox content container with scroll */
+.lightbox-content {
+  max-width: 900px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  background: var(--color-pure-white);
+  padding: 20px;
+  border-radius: var(--radius-md);
+  position: relative;
+}
+
+#lightbox .modal-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: var(--color-charcoal);
+}
+
+/* Adjust close button touch target for mobile */
+@media (max-width: 480px) {
+  #lightbox .modal-close {
+    font-size: 2rem;
+    top: 8px;
+    right: 8px;
+  }
+}
 .values-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1150,14 +1244,14 @@ img, video {
 @media (max-width: 991px) {
   .stories-grid {
     grid-template-columns: 1fr 1fr;  /* 2 columns on tablet */
-    gap: 25px;
+    /* gap: 25px; */
   }
 }
 
 @media (max-width: 768px) {
   .stories-grid {
     grid-template-columns: 1fr;  /* 1 column on mobile */
-    gap: 20px;
+    /* gap: 20px; */
   }
 
   .story-card img,
@@ -1456,97 +1550,6 @@ textarea.form-control {
   min-height: 120px;
   resize: vertical;
 }
-
-/* Artisans Grid */
-/* .artisans-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  align-items: stretch;
-}
-
-.artisan-card {
-  background-color: var(--color-pure-white);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  box-shadow: var(--shadow-md);
-  border: 1px solid rgba(0,0,0,0.03);
-  transition: all var(--transition-normal);
-  display: flex;
-  flex-direction: column;
-}
-
-.artisan-card .artisan-img {
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  object-position: center top;
-  display: block;
-  flex-shrink: 0;
-}
-
-.artisan-card:hover {
-  transform: translateY(-8px);
-  box-shadow: var(--shadow-lg);
-}
-
-.artisan-card .placeholder-image {
-  height: 280px;
-  border-radius: 0;
-}
-
-.artisan-info {
-  padding: 25px 30px 30px;
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-}
-
-.artisan-info .btn-read-story {
-  margin-top: auto;
-  width: 100%;
-}
-
-.artisan-info h3 {
-  font-size: 1.5rem;
-  margin-bottom: 5px;
-}
-
-.artisan-village {
-  font-size: 0.85rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--color-terracotta);
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-  display: block;
-}
-
-.artisan-skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 20px;
-}
-
-.skill-tag {
-  font-size: 0.78rem;
-  background-color: var(--color-sand-beige);
-  color: var(--color-earth-brown);
-  padding: 4px 10px;
-  border-radius: var(--radius-round);
-  font-weight: 600;
-}
-
-.artisan-story {
-  font-size: 0.92rem;
-  color: var(--color-text-muted);
-  line-height: 1.5;
-  margin-bottom: 20px;
-  flex: 1;
-} */
-
-
 
 /* Artisans Grid */
 .artisans-grid {
@@ -2393,190 +2396,7 @@ textarea.form-control {
   }
 }
 
-/* Contact Split Layout */
-.contact-split {
-  display: grid;
-  grid-template-columns: 1fr 1.3fr;
-  gap: 50px;
-  align-items: start;
-}
 
-.contact-info-panel {
-  background-color: var(--color-earth-brown);
-  color: var(--color-white);
-  padding: 50px;
-  border-radius: var(--radius-lg);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  box-shadow: var(--shadow-lg);
-}
-
-.contact-info-panel h3 {
-  color: var(--color-sand-beige);
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-.contact-info-panel p {
-  color: var(--color-sand-beige-light);
-  margin-bottom: 40px;
-}
-
-.contact-details {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  margin-bottom: 40px;
-}
-
-.detail-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 20px;
-}
-
-.detail-icon {
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255,255,255,0.08);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  border: 1px solid rgba(255,255,255,0.1);
-}
-
-.detail-icon svg {
-  width: 20px;
-  height: 20px;
-  stroke: var(--color-sand-beige);
-  fill: none;
-}
-
-.detail-content h4 {
-  font-family: var(--font-body);
-  font-size: 0.85rem;
-  color: var(--color-sand-beige-light);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 5px;
-}
-
-.detail-content p {
-  color: var(--color-white);
-  margin-bottom: 0;
-  font-size: 1rem;
-}
-
-.detail-content a:hover {
-  color: var(--color-sand-beige);
-}
-
-.social-links {
-  display: flex;
-  gap: 15px;
-}
-
-.social-btn {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background-color: rgba(255,255,255,0.08);
-  border: 1px solid rgba(255,255,255,0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all var(--transition-fast);
-}
-
-.social-btn:hover {
-  background-color: var(--color-terracotta);
-  border-color: var(--color-terracotta);
-  transform: translateY(-3px);
-}
-
-.social-btn svg {
-  width: 18px;
-  height: 18px;
-  stroke: var(--color-white);
-  fill: none;
-  stroke-width: 2;
-}
-
-.contact-form-panel {
-  background-color: var(--color-pure-white);
-  padding: 50px;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
-  border: 1px solid rgba(0,0,0,0.03);
-}
-
-@media (max-width: 991px) {
-  .contact-split {
-    grid-template-columns: 1fr;  /* Stack on mobile */
-    gap: 40px;
-  }
-
-  .contact-map-container > div:first-child {
-    min-height: 250px;
-  }
-}
-
-@media (max-width: 768px) {
-  .contact-info-panel, .contact-form-panel {
-    padding: 30px;
-  }
-}
-
-@media (max-width: 550px) {
-  .contact-info-panel, .contact-form-panel {
-    padding: 20px;
-  }
-}
-
-
-/* Map Section */
-.map-section {
-  padding: 0;
-  line-height: 0;
-  position: relative;
-}
-
-.map-placeholder {
-  width: 100%;
-  height: 450px;
-  background-color: var(--color-placeholder-bg);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: var(--color-placeholder-text);
-  border-top: 1px solid var(--color-placeholder-border);
-  border-bottom: 1px solid var(--color-placeholder-border);
-}
-
-.map-placeholder svg {
-  width: 48px;
-  height: 48px;
-  stroke: var(--color-placeholder-text);
-  margin-bottom: 12px;
-}
-
-.map-placeholder p {
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  margin-bottom: 0;
-}
-
-.map-iframe {
-  width: 100%;
-  height: 450px;
-  border: none;
-}
 
 /* Footer Styles */
 .footer {
