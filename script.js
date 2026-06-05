@@ -54,6 +54,30 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- STICKY NAVBAR & NAVIGATION SCROLL HIGHLIGHT ---
   const navbar = document.getElementById('navbar');
   const navLinks = document.querySelectorAll('.nav-link');
+
+ // --- ACTIVE LINK BASED ON CURRENT PAGE ---
+  const setActiveLinkByPage = () => {
+    const path = window.location.pathname.split('/')
+      .filter(Boolean)
+      .pop() || 'index.html';
+    navLinks.forEach(link => {
+      const href = link.getAttribute('href');
+      if (!href) return;
+      // Ignore hash links
+      if (href.startsWith('#')) return;
+      // Normalize href (could be relative like 'index.html' or './index.html')
+      const hrefFile = href.split('/').pop();
+      if (hrefFile === path) {
+        link.classList.add('active');
+      } else {
+        link.classList.remove('active');
+      }
+    });
+  };
+  // Run initially to highlight the correct nav link on page load
+  setActiveLinkByPage();
+
+  
   const sections = document.querySelectorAll('section');
 
   const handleScroll = () => {
