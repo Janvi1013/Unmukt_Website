@@ -54,8 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // --- STICKY NAVBAR & NAVIGATION SCROLL HIGHLIGHT ---
   const navbar = document.getElementById('navbar');
   const navLinks = document.querySelectorAll('.nav-link');
-
- // --- ACTIVE LINK BASED ON CURRENT PAGE ---
+  // --- ACTIVE LINK BASED ON CURRENT PAGE ---
   const setActiveLinkByPage = () => {
     const path = window.location.pathname.split('/')
       .filter(Boolean)
@@ -77,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Run initially to highlight the correct nav link on page load
   setActiveLinkByPage();
 
-  
+
   const sections = document.querySelectorAll('section');
 
   const handleScroll = () => {
