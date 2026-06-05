@@ -513,7 +513,7 @@ img, video {
 }
 
 .hero-image-container .placeholder-image {
-  height: 500px;
+  height: 300px;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
 }
@@ -538,7 +538,24 @@ img, video {
   }
 
   .hero-image-container .placeholder-image {
-    height: 350px;
+    height: 250px;
+  }
+}
+
+
+/* Add this to your stylesheet */
+.hero-img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Optional: adjust aspect ratio on mobile if needed */
+@media (max-width: 640px) {
+  .hero-img {
+    aspect-ratio: 4 / 3; /* Taller on mobile = better use of space */
   }
 }
 
@@ -2779,11 +2796,38 @@ textarea.form-control {
 }
 
 .mini-collage{
-  position: relative;
-  height: 420px;
-  max-width: 900px;
-  margin: auto;
-}
+   position: relative; 
+   height: 420px; 
+   max-width: 900px; 
+   margin: auto; 
+  }
+  
+
+
+/* 
+.mini-collage{
+   position: relative; 
+   height: 420px; 
+   /* Desktop 
+   max-width: 900px; 
+   margin: auto; 
+  }
+  
+  @media (max-width: 991px) {
+     .mini-collage { height: 350px; } /* Tablet  
+    } 
+    
+  @media (max-width: 768px) { 
+    .mini-collage { height: 280px; } /* iPad *
+  } 
+  
+  @media (max-width: 640px) { 
+    .mini-collage { height: 220px; } /* Mobile 
+  }
+  
+  @media (max-width: 480px) { 
+    .mini-collage { height: 180px; } /* Small phone 
+  } */
 
 .story-card {
   display: flex;
